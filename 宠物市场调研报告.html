@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok 美国站宠物用品市场调研报告</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f8f9fa; color: #1a1a2e; padding: 0; }
+        .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: white; padding: 48px 32px; text-align: center; }
+        .header h1 { font-size: 32px; margin-bottom: 8px; }
+        .header p { opacity: 0.8; font-size: 14px; }
+        .container { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
+
+        /* Summary cards */
+        .summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 32px; }
+        .card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); text-align: center; }
+        .card .emoji { font-size: 28px; margin-bottom: 4px; }
+        .card .label { font-size: 13px; color: #888; margin-bottom: 4px; }
+        .card .value { font-size: 24px; font-weight: 700; color: #0f3460; }
+        .card .sub { font-size: 12px; color: #aaa; }
+
+        .section { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }
+        .section h2 { font-size: 20px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 3px solid #0f3460; display: inline-block; }
+        .section h3 { font-size: 16px; margin: 16px 0 12px; color: #333; }
+
+        table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+        th { background: #f0f4ff; text-align: left; padding: 10px 8px; font-weight: 600; color: #0f3460; border-bottom: 2px solid #dde4f0; white-space: nowrap; }
+        td { padding: 8px; border-bottom: 1px solid #eee; }
+        tr:hover td { background: #f8faff; }
+        .price { text-align: right; white-space: nowrap; }
+        .num { text-align: right; font-variant-numeric: tabular-nums; }
+
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+        .badge-green { background: #e8f5e9; color: #2e7d32; }
+        .badge-red { background: #fce4ec; color: #c62828; }
+
+        /* Horizontal Bar Chart */
+        .hbar { margin: 12px 0; }
+        .hbar-item { display: flex; align-items: center; margin-bottom: 6px; }
+        .hbar-label { width: 120px; font-size: 12px; text-align: right; padding-right: 10px; color: #555; flex-shrink: 0; }
+        .hbar-bar-wrap { flex: 1; height: 24px; background: #f0f0f0; border-radius: 4px; overflow: hidden; }
+        .hbar-bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 8px; font-size: 11px; color: white; font-weight: 600; }
+        .hbar-val { width: 80px; font-size: 12px; padding-left: 8px; color: #333; flex-shrink: 0; }
+
+        .insight-box { background: #eef4ff; border-left: 4px solid #0f3460; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 13px; }
+        .insight-box strong { color: #0f3460; }
+
+        .chart-wrap { margin: 16px 0; }
+        .mermaid-s { max-width: 100%; overflow: auto; }
+
+        .tip { background: linear-gradient(135deg, #fff8e1, #fff3cd); border: 1px solid #ffe082; border-radius: 8px; padding: 12px 16px; margin: 12px 0; font-size: 13px; }
+        .tip strong { color: #e65100; }
+
+        .footer { text-align: center; padding: 24px; font-size: 12px; color: #999; }
+
+        @media (max-width: 600px) {
+            .summary { grid-template-columns: 1fr; }
+            .hbar-label { width: 80px; font-size: 11px; }
+            .hbar-val { width: 60px; font-size: 11px; }
+            table { font-size: 11px; }
+            th, td { padding: 6px 4px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🐾 TikTok 美国站宠物用品市场调研报告</h1>
+        <p>数据周期：2026-05-04 ~ 2026-06-02 &nbsp;|&nbsp; 来源：Kalodata &nbsp;|&nbsp; 类目：Pet Supplies</p>
+    </div>
+
+    <div class="container">
+
+        <div class="summary">
+            <div class="card">
+                <div class="emoji">🧑‍🎤</div>
+                <div class="label">TOP20 达人总GMV</div>
+                <div class="value">¥1,843.9万</div>
+                <div class="sub">64,269件销量</div>
+            </div>
+            <div class="card">
+                <div class="emoji">🏪</div>
+                <div class="label">TOP20 店铺总GMV</div>
+                <div class="value">¥4,664.4万</div>
+                <div class="sub">162,184件销量</div>
+            </div>
+            <div class="card">
+                <div class="emoji">📦</div>
+                <div class="label">TOP20 商品总GMV</div>
+                <div class="value">¥2,907.8万</div>
+                <div class="sub">112,234件销量</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🏪 店铺 TOP10</h2>
+            <div class="hbar">
+                <div class="hbar-item">
+                    <div class="hbar-label">PetPivot</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:100%;background:#0f3460;"> 966万 </div> </div>
+                    <div class="hbar-val"> ¥9,660,873 </div>
+                </div>
+                <div class="hbar-item">
+                    <div class="hbar-label">Wild Wolf</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:43.7%;background:#1a5276;"> 422万 </div> </div>
+                    <div class="hbar-val"> ¥4,216,934 </div>
+                </div>
+                <div class="hbar-item">
+                    <div class="hbar-label">dogfriendlyco</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:39.6%;background:#2471a3;"> 382万 </div> </div>
+                    <div class="hbar-val"> ¥3,824,998 </div>
+                </div>
+                <div class="hbar-item">
+                    <div class="hbar-label">Warcat Pro</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:30.3%;background:#2e86c1;"> 293万 </div> </div>
+                    <div class="hbar-val"> ¥2,930,220 </div>
+                </div>
+                <div class="hbar-item">
+                    <div class="hbar-label">Zesty Paws</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:27.3%;background:#3498db;"> 263万 </div> </div>
+                    <div class="hbar-val"> ¥2,634,418 </div>
+                </div>
+                <div class="hbar-item">
+                    <div class="hbar-label">HapawPet</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:21.5%;background:#5dade2;"> 208万 </div> </div>
+                    <div class="hbar-val"> ¥2,081,666 </div>
+                </div>
+                <div class="hbar-item">
+                    <div class="hbar-label">Oneisall</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:21.3%;background:#85c1e9;"> 205万 </div> </div>
+                    <div class="hbar-val"> ¥2,054,026 </div>
+                </div>
+                <div class="hbar-item">
+                    <div class="hbar-label">Odorcide</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:20.5%;background:#aed6f1;"> 198万 </div> </div>
+                    <div class="hbar-val"> ¥1,984,779 </div>
+                </div>
+                <div class="hbar-item">
+                    <div class="hbar-label">VEVOR</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:18.7%;background:#d4e6f1;color:#333;"> 180万 </div> </div>
+                    <div class="hbar-val"> ¥1,804,569 </div>
+                </div>
+                <div class="hbar-item">
+                    <div class="hbar-label">FUMOI</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:17.5%;background:#e8f0f8;color:#333;"> 169万 </div> </div>
+                    <div class="hbar-val"> ¥1,687,010 </div>
+                </div>
+            </div>
+            <div class="insight-box">
+                💡 <strong>PetPivot 以¥966万断层领先</strong>，是第二名 Wild Wolf 的2.3倍，品牌势能极强。前10名中全部为品牌店铺（仅2家零售商），品牌化程度高。
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🧑‍🎤 达人 TOP10</h2>
+            <div class="hbar">
+                <div class="hbar-item">
+                    <div class="hbar-label">Garrett Wyatt</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:100%;background:#0f3460;"> 136万 </div> </div>
+                    <div class="hbar-val"> ¥1,362,140 </div>
+                </div>
+                <div class="hbar-item">
+                    <div class="hbar-label">Colton</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:99.3%;background:#1a5276;"> 135万 </div> </div>
+                    <div class="hbar-val"> ¥1,351,725 </div>
+                </div>
+                <div class="hbar-item">
+                    <div class="hbar-label">PetPivot</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:94.3%;background:#2471a3;"> 128万 </div> </div>
+                    <div class="hbar-val"> ¥1,284,629 </div>
+                </div>
+                <div class="hbar-item">
+                    <div class="hbar-label">Leo & Simba</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:93.0%;background:#2e86c1;"> 127万 </div> </div>
+                    <div class="hbar-val"> ¥1,267,060 </div>
+                </div>
+                <div class="hbar-item">
+                    <div class="hbar-label">Adam</div>
+                    <div class="hbar-bar-wrap"> <div class="hbar-bar" style="width:84.3
