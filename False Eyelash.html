@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TikTok 美国站假睫毛市场调研报告 | False Eyelash</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f8f9fa; color: #1a1a2e; padding: 0; }
+.header { background: linear-gradient(135deg, #0d47a1 0%, #1565c0 50%, #42a5f5 100%); color: white; padding: 48px 32px; text-align: center; }
+.header h1 { font-size: 32px; margin-bottom: 8px; }
+.header p { opacity: 0.8; font-size: 14px; }
+.container { max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
+.summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 32px; }
+.card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); text-align: center; }
+.card .emoji { font-size: 28px; margin-bottom: 4px; }
+.card .label { font-size: 13px; color: #888; margin-bottom: 4px; }
+.card .value { font-size: 24px; font-weight: 700; color: #0d47a1; }
+.card .sub { font-size: 12px; color: #aaa; }
+.section { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.section h2 { font-size: 20px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 3px solid #0d47a1; display: inline-block; }
+.section h3 { font-size: 16px; margin: 16px 0 12px; color: #333; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+th { background: #e3f2fd; text-align: left; padding: 10px 8px; font-weight: 600; color: #0d47a1; border-bottom: 2px solid #bbdefb; white-space: nowrap; }
+td { padding: 8px; border-bottom: 1px solid #eee; }
+tr:hover td { background: #f5f9ff; }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.badge-green { background: #e8f5e9; color: #2e7d32; }
+.badge-red { background: #fce4ec; color: #c62828; }
+.hbar { margin: 12px 0; }
+.hbar-item { display: flex; align-items: center; margin-bottom: 6px; }
+.hbar-label { width: 130px; font-size: 12px; text-align: right; padding-right: 10px; color: #555; flex-shrink: 0; }
+.hbar-bar-wrap { flex: 1; height: 24px; background: #f0f0f0; border-radius: 4px; overflow: hidden; }
+.hbar-bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 8px; font-size: 11px; color: white; font-weight: 600; }
+.hbar-val { width: 88px; font-size: 12px; padding-left: 8px; color: #333; flex-shrink: 0; }
+.insight-box { background: #e3f2fd; border-left: 4px solid #0d47a1; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 13px; }
+.insight-box strong { color: #0d47a1; }
+.chart-wrap { margin: 16px 0; }
+.mermaid-s { max-width: 100%; overflow: auto; }
+.tip { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border: 1px solid #a5d6a7; border-radius: 8px; padding: 12px 16px; margin: 12px 0; font-size: 13px; }
+.tip strong { color: #2e7d32; }
+.warn { background: linear-gradient(135deg, #fff3e0, #ffe0b2); border: 1px solid #ffcc80; border-radius: 8px; padding: 12px 16px; margin: 12px 0; font-size: 13px; }
+.warn strong { color: #e65100; }
+.footer { text-align: center; padding: 24px; font-size: 12px; color: #999; }
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.kpi-card { background: #e3f2fd; border-radius: 8px; padding: 14px; text-align: center; }
+.kpi-card .kpi-icon { font-size: 22px; margin-bottom: 4px; }
+.kpi-card .kpi-label { font-size: 12px; color: #666; }
+.kpi-card .kpi-val { font-weight: 700; font-size: 16px; color: #0d47a1; }
+@media (max-width: 600px) {
+  .summary { grid-template-columns: 1fr; }
+  .hbar-label { width: 90px; font-size: 11px; }
+  .hbar-val { width: 65px; font-size: 11px; }
+  table { font-size: 11px; }
+  th, td { padding: 6px 4px; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>👁️ TikTok 美国站·假睫毛与胶水市场调研报告</h1>
+  <p>数据周期：2026-05-05 ~ 2026-06-03 &nbsp;|&nbsp; 来源：Kalodata &nbsp;|&nbsp; 类目：False Eyelash & Glue</p>
+</div>
+
+<div class="container">
+
+<!-- Summary -->
+<div class="summary">
+  <div class="card">
+    <div class="emoji">🧑‍🎤</div>
+    <div class="label">TOP20 达人总GMV</div>
+    <div class="value">¥1,114.5万</div>
+    <div class="sub">97,782件销量</div>
+  </div>
+  <div class="card">
+    <div class="emoji">🏪</div>
+    <div class="label">TOP20 店铺总GMV</div>
+    <div class="value">¥4,076.9万</div>
+    <div class="sub">416,490件销量</div>
+  </div>
+  <div class="card">
+    <div class="emoji">📦</div>
+    <div class="label">TOP20 商品总GMV</div>
+    <div class="value">¥2,075.5万</div>
+    <div class="sub">188,939件销量</div>
+  </div>
+</div>
+
+<!-- KPI Cards -->
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-icon">🎥</div>
+    <div class="kpi-label">视频带货占比</div>
+    <div class="kpi-val">82.0%</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon">📺</div>
+    <div class="kpi-label">直播带货占比</div>
+    <div class="kpi-val">17.8%</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon">🤝</div>
+    <div class="kpi-label">联盟达人成交</div>
+    <div class="kpi-val">89.1%</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon">📊</div>
+    <div class="kpi-label">最高达人出单率</div>
+    <div class="kpi-val">77.2%</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon">🚀</div>
+    <div class="kpi-label">最高增长率</div>
+    <div class="kpi-val">+218.3%</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon">💰</div>
+    <div class="kpi-label">最高佣金</div>
+    <div class="kpi-val">14%</div>
+  </div>
+</div>
+
+<!-- ====== SHOPS ====== -->
+<div class="section">
+  <h2>🏪 店铺 TOP10</h2>
+  
+  <div class="hbar">
+    <div class="hbar-item">
+      <div class="hbar-label">Wosado US</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:100%;background:#0d47a1;">567万</div></div>
+      <div class="hbar-val">¥5,671,113</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">KEYYOU SHOP</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:81.9%;background:#1565c0;">464万</div></div>
+      <div class="hbar-val">¥4,644,134</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">YouLuck Beauty</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:69.0%;background:#1976d2;">392万</div></div>
+      <div class="hbar-val">¥3,916,121</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">Goddvenus Lashes</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:64.0%;background:#1e88e5;">363万</div></div>
+      <div class="hbar-val">¥3,630,845</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">WhiteSnow Beauty</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:55.5%;background:#2196f3;">315万</div></div>
+      <div class="hbar-val">¥3,148,430</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">Cofier Lashes</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:49.4%;background:#42a5f5;">280万</div></div>
+      <div class="hbar-val">¥2,801,854</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">Butterfly Lashes</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:45.9%;background:#64b5f6;">260万</div></div>
+      <div class="hbar-val">¥2,601,868</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">OKAYLOVE</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:44.2%;background:#90caf9;color:#333;">251万</div></div>
+      <div class="hbar-val">¥2,505,009</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">Kisslily</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:26.9%;background:#bbdefb;color:#333;">153万</div></div>
+      <div class="hbar-val">¥1,527,685</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">Focipeysa Lashes</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:25.2%;background:#e3f2fd;color:#333;">143万</div></div>
+      <div class="hbar-val">¥1,431,653</div>
+    </div>
+  </div>
+
+  <table>
+    <tr><th>排名</th><th>店铺</th><th class="num">GMV(¥)</th><th class="num">销量</th><th class="num">均价</th><th>类型</th><th class="num">联盟占比</th><th class="num">视频占比</th></tr>
+    <tr><td>🥇</td><td><strong>Wosado US</strong></td><td class="num">5,671,113</td><td class="num">21,198</td><td class="num">¥268</td><td>品牌</td><td class="num">68.6%</td><td class="num">65.6%</td></tr>
+    <tr><td>🥈</td><td><strong>KEYYOU SHOP</strong></td><td class="num">4,644,134</td><td class="num">58,576</td><td class="num">¥79</td><td>品牌</td><td class="num">97.0%</td><td class="num">97.7%</td></tr>
+    <tr><td>🥉</td><td><strong>YouLuck Beauty</strong></td><td class="num">3,916,121</td><td class="num">38,666</td><td class="num">¥101</td><td>品牌</td><td class="num">91.4%</td><td class="num">95.6%</td></tr>
+    <tr><td>4</td><td>Goddvenus Lashes</td><td class="num">3,630,845</td><td class="num">35,367</td><td class="num">¥103</td><td>品牌</td><td class="num">97.5%</td><td class="num">98.6%</td></tr>
+    <tr><td>5</td><td>WhiteSnow Beauty</td><td class="num">3,148,430</td><td class="num">30,448</td><td class="num">¥103</td><td>零售商</td><td class="num">77.6%</td><td class="num">73.0%</td></tr>
+    <tr><td>6</td><td>Cofier Lashes</td><td class="num">2,801,854</td><td class="num">22,857</td><td class="num">¥123</td><td>品牌</td><td class="num">80.6%</td><td class="num">58.4%</td></tr>
+    <tr><td>7</td><td>Butterfly Lashes</td><td class="num">2,601,868</td><td class="num">25,875</td><td class="num">¥101</td><td>品牌</td><td class="num">97.7%</td><td class="num">98.0%</td></tr>
+    <tr><td>8</td><td>OKAYLOVE</td><td class="num">2,505,009</td><td class="num">31,761</td><td class="num">¥79</td><td>品牌</td><td class="num">90.8%</td><td class="num">93.6%</td></tr>
+    <tr><td>9</td><td>Kisslily</td><td class="num">1,527,685</td><td class="num">14,335</td><td class="num">¥107</td><td>品牌</td><td class="num">98.2%</td><td class="num">98.3%</td></tr>
+    <tr><td>10</td><td>Focipeysa Lashes</td><td class="num">1,431,653</td><td class="num">13,994</td><td class="num">¥102</td><td>品牌</td><td class="num">98.7%</td><td class="num">98.6%</td></tr>
+  </table>
+
+  <div class="insight-box">
+    💡 <strong>假睫毛赛道规模巨大！</strong> TOP20店铺总GMV ¥4,077万，远超内衣类目（¥253万）。市场被中国品牌主导，Wosado暂列第一，但KEYYOU凭借低价高量（均价¥79、销量5.9万件）紧追不舍。几乎所有店铺联盟占比>90%，达人BD是核心引擎。
+  </div>
+</div>
+
+<!-- ====== CREATORS ====== -->
+<div class="section">
+  <h2>🧑‍🎤 达人 TOP10</h2>
+  
+  <div class="hbar">
+    <div class="hbar-item">
+      <div class="hbar-label">tesson ♡</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:100%;background:#0d47a1;">133.6万</div></div>
+      <div class="hbar-val">¥1,335,631</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">Wosado US</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:83.4%;background:#1565c0;">111.4万</div></div>
+      <div class="hbar-val">¥1,114,379</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">Makayla Campbell</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:59.6%;background:#1976d2;">79.7万</div></div>
+      <div class="hbar-val">¥796,610</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">The Kayla Flash</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:56.4%;background:#1e88e5;">75.3万</div></div>
+      <div class="hbar-val">¥753,018</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">AriaMist</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:52.6%;background:#2196f3;">70.3万</div></div>
+      <div class="hbar-val">¥702,730</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">Laurel Kate Anderson</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:43.2%;background:#42a5f5;">57.7万</div></div>
+      <div class="hbar-val">¥576,853</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">🦋🌸 Lenzi 🌸🦋</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:42.5%;background:#64b5f6;">56.8万</div></div>
+      <div class="hbar-val">¥567,548</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">brenda</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:39.8%;background:#90caf9;color:#333;">53.2万</div></div>
+      <div class="hbar-val">¥532,223</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">E M I L Y✨</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:38.7%;background:#bbdefb;color:#333;">51.8万</div></div>
+      <div class="hbar-val">¥517,530</div>
+    </div>
+    <div class="hbar-item">
+      <div class="hbar-label">gracie's goodies</div>
+      <div class="hbar-bar-wrap"><div class="hbar-bar" style="width:38.2%;background:#e3f2fd;color:#333;">51.0万</div></div>
+      <div class="hbar-val">¥509,895</div>
+    </div>
+  </div>
+
+  <table>
+    <tr><th>达人</th><th class="num">GMV(¥)</th><th>粉丝</th><th class="num">视频</th><th>互动率</th><th class="num">内容观看</th><th>模式</th></tr>
+    <tr><td><strong>tesson ♡</strong> 🥇</td><td class="num">1,335,631</td><td>67,300</td><td class="num">121条</td><td>4.02%</td><td class="num">2,695万</td><td>视频99.8%</td></tr>
+    <tr><td><strong>Wosado US (自播)</strong> 🥈</td><td class="num">1,114,379</td><td>44,500</td><td class="num">9条</td><td>0</td><td class="num">23万</td><td><strong>直播98.8%</strong></td></tr>
+    <tr><td><strong>Makayla Campbell</strong> 🥉</td><td class="num">796,610</td><td>13,700</td><td class="num">73条</td><td>1.0%</td><td class="num">115万</td><td>视频100%</td></tr>
+    <tr><td>The Kayla Flash</td><td class="num">753,018</td><td>106,900</td><td class="num">52条</td><td>4.72%</td><td class="num">2,177万</td><td>视频99.9%</td></tr>
+    <tr><td>AriaMist (自播)</td><td class="num">702,730</td><td>73,900</td><td class="num">25条</td><td>1.36%</td><td class="num">437万</td><td>直播73%</td></tr>
+    <tr><td>Laurel Kate Anderson</td><td class="num">576,853</td><td>13,100</td><td class="num">39条</td><td>1.84%</td><td class="num">2,068万</td><td>视频100%</td></tr>
+    <tr><td>Lenzi 🦋</td><td class="num">567,548</td><td>7,151</td><td class="num">0条</td><td>1.33%</td><td class="num">27万</td><td>视频100%</td></tr>
+    <tr><td>brenda</td><td class="num">532,223</td><td>8,556</td><td class="num">109条</td><td>-</td><td class="num">903万</td><td>视频99.6%</td></tr>
+    <tr><td>E M I L Y ✨</td><td class="num">517,530</td><td>11,500</td><td class="num">142条</td><td>0.52%</td><td class="num">121万</td><td>视频100%</td></tr>
+    <tr><td>gracie's goodies</td><td class="num">509,895</td><td>215,300</td><td class="num">31条</td><td>1.05%</td><td class="num">1,113万</td><td>视频100%</td></tr>
+  </table>
+
+  <div class="insight-box">
+    💡 <strong>tesson ♡ 一骑绝尘！</strong> 6.7万粉产出¥133.6万GMV，互动率4.02%。但Wosado US自播号仅4.5万粉用25场直播就做了¥111万，说明品牌自播也能做起来。<strong>Lenzi仅7,151粉、0条新视频却产出¥56.8万</strong>，靠历史视频持续带货。
+  </div>
+</div>
+
+<!-- ====== CHANNEL ====== -->
+<div class="section">
+  <h2>📊 渠道结构</h2>
+
+  <div style="display:flex;flex-wrap:wrap;gap:20px;">
+    <div style="flex:1;min-width:200px;">
+      <h3>店铺成交渠道</h3>
+      <div class="chart-wrap mermaid-s">
+        <pre class="mermaid">
+        pie showData
+            title 店铺成交渠道分布
+            "联盟达人" : 89.1
+            "自营账号" : 6.3
+            "直播" : 9.5
+            "商城" : 4.6
+            "商品卡" : 5.0
+        </pre>
+      </div>
+    </div>
+    <div style="flex:1;min-width:200px;">
+      <h3>达人GMV来源</h3>
+      <div class="chart-wrap mermaid-s">
+        <pre class="mermaid">
+        pie showData
+            title 达人GMV来源
+            "视频带货" : 82.0
+            "直播带货" : 17.8
+        </pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="tip">
+    🔥 <strong>视频主导（82%）、直播有空间（18%）</strong> — 假睫毛是典型"演示型"产品，视频试戴对比效果天然适合种草。但Wosado US和AriaMist证明直播也能做起来，假睫毛直播客单价高（¥268-¥304），ROI可观。
+  </div>
+</div>
+
+<!-- ====== PRODUCTS ====== -->
+<div class="section">
+  <h2>🔥 爆款商品 TOP12</h2>
+  
+  <table>
+    <tr><th>商品</th><th class="num">GMV(¥)</th><th class="num">销量</th><th>均价</th><th>增长</th><th>佣金</th><th class="num">达人</th><th class="num">出单率</th></tr>
+    <tr><td><strong>WOSADO磁性睫毛套装</strong> 🥇</td><td class="num">2,408,959</td><td class="num">7,916</td><td>¥304</td><td><span class="badge badge-red">-35.2%</span></td><td>5%</td><td class="num">143</td><td class="num"><strong>60.1%</strong></td></tr>
+    <tr><td><strong>Goddvenus蜘蛛睫毛簇</strong> 🥈</td><td class="num">1,844,258</td><td class="num">18,154</td><td>¥102</td><td><span class="badge badge-green">+7.5%</span></td><td><strong>14%</strong></td><td class="num"><strong>1,184</strong></td><td class="num">22.6%</td></tr>
+    <tr><td><strong>YOULUCK DIY睫毛套装</strong> 🥉</td><td class="num">1,730,791</td><td class="num">16,996</td><td>¥102</td><td><span class="badge badge-red">-1.9%</span></td><td>10%</td><td class="num">946</td><td class="num">32.7%</td></tr>
+    <tr><td><strong>KEYYOU Flora睫毛套装</strong> 🚀</td><td class="num">1,301,309</td><td class="num">13,202</td><td>¥99</td><td><span class="badge badge-green">+61.2%</span></td><td>10%</td><td class="num">327</td><td class="num">29.7%</td></tr>
+    <tr><td>uCoolMe胶水套装</td><td class="num">1,223,753</td><td class="num">12,064</td><td>¥101</td><td><span class="badge badge-red">-6.4%</span></td><td>10%</td><td class="num">222</td><td class="num"><strong>48.7%</strong></td></tr>
+    <tr><td>Focipeysa狐尾睫毛簇</td><td class="num">1,212,597</td><td class="num">11,962</td><td>¥101</td><td><span class="badge badge-red">-9%</span></td><td><strong>14%</strong></td><td class="num">731</td><td class="num">25.7%</td></tr>
+    <tr><td>AiryCute睫毛簇套装</td><td class="num">1,195,716</td><td class="num">11,738</td><td>¥102</td><td><span class="badge badge-red">-67%</span></td><td>11%</td><td class="num">101</td><td class="num"><strong>77.2%</strong></td></tr>
+    <tr><td>Wosado软磁睫毛</td><td class="num">1,017,983</td><td class="num">4,343</td><td>¥234</td><td><span class="badge badge-red">-25.9%</span></td><td>5%</td><td class="num">352</td><td class="num">46.3%</td></tr>
+    <tr style="background:#e8f5e9;"><td><strong>⚡ Goddvenus丰盈D卷</strong></td><td class="num">973,179</td><td class="num">9,303</td><td>¥105</td><td><span class="badge badge-green"><strong>+218.3%</strong></span></td><td><strong>14%</strong></td><td class="num">451</td><td class="num">27.3%</td></tr>
+    <tr><td>Cofier无胶睫毛套装</td><td class="num">883,086</td><td class="num">5,970</td><td>¥148</td><td><span class="badge badge-red">-21.6%</span></td><td>10%</td><td class="num">589</td><td class="num"><strong>47.9%</strong></td></tr>
+    <tr><td>MilyBest 4款睫毛Kit</td><td class="num">783,552</td><td class="num">12,703</td><td><strong>¥62</strong></td><td><span class="badge badge-green"><strong>+106.2%</strong></span></td><td>10%</td><td class="num"><strong>1,302</strong></td><td class="num">23.6%</td></tr>
+    <tr><td>KEYYOU Venus Naiad</td><td class="num">573,928</td><td class="num">14,399</td><td><strong>¥40</strong></td><td><span class="badge badge-green"><strong>+148%</strong></span></td><td>10%</td><td class="num">221</td><td class="num"><strong>44.3%</strong></td></tr>
+  </table>
+
+  <div class="insight-box">
+    💡 <strong>WOSADO磁性睫毛虽然GMV第一（¥241万）但持续下滑-35%</strong>，而DIY睫毛套装（KEYYOU、Goddvenus、MilyBest）正快速增长。无胶/自粘/簇状睫毛正在替代传统磁性睫毛。<strong>KEYYOU Flora +61%、MilyBest +106%、Goddvenus +218%</strong> 增速惊人。
+  </div>
+</div>
+
+<!-- ====== GROWTH STARS ====== -->
+<div class="section">
+  <h2>🚀 增长引擎 TOP6</h2>
+
+  <div class="chart-wrap mermaid-s">
+    <pre class="mermaid">
+    xychart-beta
+        title "GMV增长率 TOP6 (%)"
+        x-axis ["Goddvenus丰盈D卷", "KEYYOU Venus Naiad", "OKAYLOVE Idol", "MilyBest 4款Kit", "KEYYOU Flora", "Fox Eye睫毛簇"]
+        y-axis "增长率 %" 0 --> 230
+        bar [218.3, 148, 144.7, 106.2, 61.2, 90.7]
+    </pre>
+  </div>
+
+  <table>
+    <tr><th>商品</th><th>增长率</th><th class="num">GMV</th><th>佣金</th><th class="num">出单率</th><th>成功要素</th></tr>
+    <tr style="background:#e8f5e9;"><td><strong>Goddvenus丰盈D卷</strong> 🚀</td><td><span class="badge badge-green"><strong>+218.3%</strong></span></td><td class="num">¥97.3万</td><td><strong>14%</strong></td><td class="num">27.3%</td><td>高佣金+451达人铺量</td></tr>
+    <tr><td><strong>KEYYOU Venus Naiad</strong> 🚀</td><td><span class="badge badge-green"><strong>+148%</strong></span></td><td class="num">¥57.4万</td><td>10%</td><td class="num"><strong>44.3%</strong></td><td><strong>¥40超低价</strong>+高转化</td></tr>
+    <tr><td><strong>OKAYLOVE Idol睫毛</strong> 🚀</td><td><span class="badge badge-green"><strong>+144.7%</strong></span></td><td class="num">¥61.6万</td><td>12%</td><td class="num">20.9%</td><td>新品+12%佣金快速起量</td></tr>
+    <tr><td><strong>MilyBest 4款Kit</strong> 🚀</td><td><span class="badge badge-green"><strong>+106.2%</strong></span></td><td class="num">¥78.4万</td><td>10%</td><td class="num">23.6%</td><td><strong>1,302达人</strong>规模化BD</td></tr>
+    <tr><td><strong>Fox Eye睫毛簇</strong></td><td><span class="badge badge-green"><strong>+90.7%</strong></span></td><td class="num">¥54.9万</td><td>7%</td><td class="num">42.9%</td><td>满分5.0评分+高品质口碑</td></tr>
+    <tr><td><strong>KEYYOU Flora套装</strong></td><td><span class="badge badge-green"><strong>+61.2%</strong></span></td><td class="num">¥130.1万</td><td>10%</td><td class="num">29.7%</td><td>品牌势能+327达人矩阵</td></tr>
+  </table>
+
+  <div class="tip">
+    ⚡ <strong>DIY/簇状睫毛是增长主旋律！</strong> 排名前6的增长商品全部是DIY睫毛簇/套装，而非磁性睫毛。<strong>Goddvenus +218%</strong> 和 <strong>KEYYOU Venus +148%</strong> 代表了两条不同路径——前者高佣铺量，后者低价高转化。
+  </div>
+</div>
+
+<!-- ====== DECLINING ====== -->
+<div class="section">
+  <h2>📉 衰退警示 TOP4</h2>
+  
+  <div class="chart-wrap mermaid-s">
+    <pre class="mermaid">
+    xychart-beta
+        title "GMV下跌率 TOP4 (%)"
+        x-axis ["AiryCute睫毛簇", "WOSADO植物磁性", "Wosado软磁2号", "uCoolMe 3合1"]
+        y-axis "下跌 %" -80 --> 0
+        bar [-67, -35.2, -30.4, -29.6]
+    </pre>
+  </div>
+
+  <table>
+    <tr><th>商品</th><th>下跌率</th><th class="num">GMV</th><th>出单率</th><th>可能原因</th></tr>
+    <tr><td>AiryCute睫毛簇套装</td><td><span class="badge badge-red"><strong>-67%</strong></span></td><td class="num">¥119.6万</td><td class="num"><strong>77.2%</strong></td><td>虽然出单率最高但增长见顶</td></tr>
+    <tr><td>WOSADO植物磁性睫毛</td><td><span class="badge badge-red">-35.2%</span></td><td class="num">¥240.9万</td><td class="num">60.1%</td><td>磁性睫毛品类整体衰退</td></tr>
+    <tr><td>Wosado软磁睫毛(旧款)</td><td><span class="badge badge-red">-30.4%</span></td><td class="num">¥91.4万</td><td class="num">38.4%</td><td>被DIY睫毛簇替代</td></tr>
+    <tr><td>uCoolMe 3合1套装</td><td><span class="badge badge-red">-29.6%</span></td><td class="num">¥84.5万</td><td class="num">38.8%</td><td>胶水类竞争激烈</td></tr>
+  </table>
+
+  <div class="warn">
+    ⚠️ <strong>传统磁性睫毛正在被DIY簇状睫毛取代！</strong> WOSADO作为磁吸睫毛代表品牌，3款产品全部下跌（-25%~-35%）。而簇状睫毛/无胶睫毛品类全线增长。<strong>产品迭代方向：从"磁性"→"自粘簇状"</strong>。
+  </div>
+</div>
+
+<!-- ====== COMMISSION ====== -->
+<div class="section">
+  <h2>💰 佣金策略分析</h2>
+  
+  <table>
+    <tr><th>商品</th><th>佣金</th><th class="num">出单率</th><th class="num">合作达人</th><th class="num">均价</th><th>增长</th></tr>
+    <tr style="background:#e8f5e9;"><td><strong>⚡ Goddvenus丰盈D卷</strong></td><td><strong>14%</strong></td><td class="num">27.3%</td><td class="num">451</td><td class="num">¥105</td><td><span class="badge badge-green">+218.3%</span></td></tr>
+    <tr><td><strong>Goddvenus蜘蛛睫毛簇</strong></td><td><strong>14%</strong></td><td class="num">22.6%</td><td class="num"><strong>1,184</strong></td><td class="num">¥102</td><td><span class="badge badge-green">+7.5%</span></td></tr>
+    <tr><td><strong>Focipeysa狐尾睫毛簇</strong></td><td><strong>14%</strong></td><td class="num">25.7%</td><td class="num">731</td><td class="num">¥101</td><td><span class="badge badge-red">-9%</span></td></tr>
+    <tr><td><strong>OKAYLOVE Idol睫毛</strong></td><td><strong>12%</strong></td><td class="num">20.9%</td><td class="num">259</td><td class="num">¥114</td><td><span class="badge badge-green">+144.7%</span></td></tr>
+    <tr><td>AiryCute睫毛套装</td><td>11%</td><td class="num"><strong>77.2%</strong></td><td class="num">101</td><td class="num">¥102</td><td><span class="badge badge-red">-67%</span></td></tr>
+    <tr><td>KEYYOU Flora套装</td><td>10%</td><td class="num">29.7%</td><td class="num">327</td><td class="num">¥99</td><td><span class="badge badge-green">+61.2%</span></td></tr>
+    <tr><td>MilyBest 4款Kit</td><td>10%</td><td class="num">23.6%</td><td class="num"><strong>1,302</strong></td><td class="num"><strong>¥62</strong></td><td><span class="badge badge-green">+106.2%</span></td></tr>
+    <tr><td>KEYYOU Venus Naiad</td><td>10%</td><td class="num"><strong>44.3%</strong></td><td class="num">221</td><td class="num"><strong>¥40</strong></td><td><span class="badge badge-green">+148%</span></td></tr>
+    <tr><td>WOSADO磁性睫毛</td><td><strong>5%</strong></td><td class="num">60.1%</td><td class="num">143</td><td class="num">¥304</td><td><span class="badge badge-red">-35.2%</span></td></tr>
+  </table>
+
+  <div class="insight-box">
+    💡 <strong>14%佣金是风向标！</strong> Goddvenus和Focipeysa都采用14%佣金策略，配合大规模达人铺量（451-1,184人）实现快速增长。而WOSADO仅5%佣金，虽然单品GMV仍高但增速持续下滑。<strong>假睫毛品类标杆佣金=10-14%</strong>，低于5%很难吸引优质达人。
+  </div>
+</div>
+
+<!-- ====== KEY INSIGHTS ====== -->
+<div class="section">
+  <h2>🎯 核心结论</h2>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:16px;">
+    <div style="background:#e3f2fd;border-radius:8px;padding:14px;text-align:center;">
+      <div style="font-size:24px;margin-bottom:4px;">📈</div>
+      <div style="font-size:13px;color:#555;">市场规模</div>
+      <div style="font-weight:700;color:#0d47a1;">TOP20店铺¥4,077万</div>
+    </div>
+    <div style="background:#e8f5e9;border-radius:8px;padding:14px;text-align:center;">
+      <div style="font-size:24px;margin-bottom:4px;">🔄</div>
+      <div style="font-size:13px;color:#555;">品类迭代</div>
+      <div style="font-weight:700;color:#2e7d32;">DIY簇状崛起→磁性衰退</div>
+    </div>
+    <div style="background:#fff3e0;border-radius:8px;padding:14px;text-align:center;">
+      <div style="font-size:24px;margin-bottom:4px;">💰</div>
+      <div style="font-size:13px;color:#555;">佣金标杆</div>
+      <div style="font-weight:700;color:#e65100;">10-14%是有效区间</div>
+    </div>
+    <div style="background:#fce4ec;border-radius:8px;padding:14px;text-align:center;">
+      <div style="font-size:24px;margin-bottom:4px;">🤝</div>
+      <div style="font-size:13px;color:#555;">达人依赖度</div>
+      <div style="font-weight:700;color:#c62828;">联盟达人占89%成交</div>
+    </div>
+    <div style="background:#f3e5f5;border-radius:8px;padding:14px;text-align:center;">
+      <div style="font-size:24px;margin-bottom:4px;">🎯</div>
+      <div style="font-size:13px;color:#555;">定价策略</div>
+      <div style="font-weight:700;color:#6a1b9a;">¥40-105低价高转化</div>
+    </div>
+  </div>
+
+  <div style="background:linear-gradient(135deg,#0d47a1,#1565c0);color:white;border-radius:12px;padding:20px;">
+    <h3 style="color:#ffd54f;border:none;">🎯 入局建议</h3>
+    <ol style="padding-left:20px;line-height:2;font-size:14px;">
+      <li><strong>选品方向：</strong>押注<strong>DIY簇状睫毛/自粘睫毛</strong>，避开磁性睫毛红海。KEYYOU Venus Naiad（¥40 +148%）和MilyBest Kit（¥62 +106%）是增长标杆</li>
+      <li><strong>佣金策略：</strong>设置<strong>10-14%佣金</strong>吸引达人，Goddvenus用14%佣金+1,184达人做到爆发式增长</li>
+      <li><strong>达人BD：</strong>主攻<strong>1w-10w粉美妆类达人</strong>，tesson ♡（6.7万粉¥133.6万）和Makayla（1.4万粉¥79.7万）是高性价比典范</li>
+      <li><strong>内容策略：</strong>视频试戴对比（82%占比）是核心，重点展示"容易上手""持久定型"等卖点</li>
+      <li><strong>品牌格局：</strong>市场正处洗牌期——WOSADO虽仍第一但持续下滑，KEYYOU、Goddvenus、OKAYLOVE等簇状睫毛品牌正快速崛起</li>
+      <li><strong>定价参考：</strong>引流品¥40-80（如Venus Naiad ¥40）+ 主力品¥80-130（如Goddvenus ¥102）+ 高端品¥130-300（Cofier ¥148 / WOSADO ¥234-304）</li>
+    </ol>
+  </div>
+</div>
+
+<div class="footer">
+  报告生成时间：2026-06-05 | 数据源：Kalodata | TikTok美区假睫毛与胶水类目<br>
+  文件：False Eyelash Report
+</div>
+
+</div>
+
+<script>
+mermaid.initialize({ startOnLoad: true, theme: 'neutral', securityLevel: 'loose' });
+</script>
+
+</body>
+</html>
